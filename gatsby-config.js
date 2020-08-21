@@ -25,6 +25,10 @@ module.exports = {
       {
         name:'Portfolio',
         href:'#portfolio'
+      },
+      {
+        name:'About',
+        href:'#about'
       }
     ]
   },
