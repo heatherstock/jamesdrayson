@@ -1,23 +1,45 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from "react"
 import PropTypes from "prop-types"
+import styled from "styled-components";
+import Img from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
-
 import Header from "./header"
-import "./layout.css"
+import { GlobalStyle } from "../theme";
+
+const Wrapper = styled.div`
+@media (max-width: 600px) {
+  margin: 0 18px;
+}
+@media (min-width: 600px) {
+  margin: 0 36px;
+}
+padding-bottom: 56px;
+`;
+
+const Footer = styled.footer`
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  width: 100%;
+  height: 56px;
+  border-top: 1px solid #154726;
+`;
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
+    query imageQueryAndSiteTitleQuery {
       site {
         siteMetadata {
           title
+        }
+      }
+      file (relativePath: { eq: "capybara.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 300) {
+            ...GatsbyImageSharpFluid
+          }
         }
       }
     }
@@ -25,21 +47,13 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
-      </div>
+    <GlobalStyle />
+      <Wrapper>
+        <Header menuLinks={data.site.siteMetadata.menuLinks} siteTitle={data.site.siteMetadata.title} />
+        <Img fluid={data.file.childImageSharp.fluid} />
+        <div>{children}</div>
+      </Wrapper>
+      <Footer>© James Drayson, {new Date().getFullYear()}</Footer>
     </>
   )
 }
