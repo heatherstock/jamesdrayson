@@ -21,6 +21,10 @@ module.exports = {
       {
         name:'Contact',
         href:'#contact'
+      },
+      {
+        name:'Portfolio',
+        href:'#portfolio'
       }
     ]
   },
