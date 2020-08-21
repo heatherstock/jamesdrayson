@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
+import Layout from "./components/layout"
 
 export default ({ data }) => {
   const Heading = styled.h1`
@@ -9,7 +10,6 @@ export default ({ data }) => {
     font-size: 36px;
     line-height: 42px;
   }
-  padding: 16px 0;;
   font-size: 42px;
   line-height: 48px;
 
@@ -30,11 +30,13 @@ const Text = styled.div`
 `;
 
   return (
+    <Layout>
       <Wrapper>
         <Heading>{data.markdownRemark.frontmatter.title}</Heading>
         <Img fluid={data.markdownRemark.frontmatter.featuredImage.childImageSharp.fluid} />
         <Text dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
       </Wrapper>
+    </Layout>
   )
 }
 

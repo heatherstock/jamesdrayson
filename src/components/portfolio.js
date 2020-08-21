@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components";
+import { Link } from "gatsby"
 import Img from "gatsby-image"
 
 const Wrapper = styled.div`
@@ -19,6 +20,14 @@ export const Subtitle = styled.h2`
 
 `;
 
+export const StyledLink = styled(Link)`
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+    text-decoration-color: #154726;
+  }
+`;
+
 export const ProjectImage = styled(Img)`
   height: 375px;
   margin-bottom: 8px;
@@ -28,34 +37,34 @@ const Heading = styled.h1`
 grid-column: span 12;
 `
 
-const Portfolio = () => (
+const Portfolio = ({ edges }) => (
   <Wrapper>
   <Heading><a id='portfolio'>Portfolio</a></Heading>
     <Project>
-      <Subtitle>Project 1</Subtitle>
+      <StyledLink to={edges[0].node.fields.slug}>
+        <Subtitle>{edges[0].node.frontmatter.title}</Subtitle>
+      </StyledLink>
+      <ProjectImage fluid={edges[0].node.frontmatter.featuredImage.childImageSharp.fluid} />
     </Project>
     <Project>
-      <Subtitle>Project 2</Subtitle>
+    <StyledLink to={edges[1].node.fields.slug}>
+        <Subtitle>{edges[1].node.frontmatter.title}</Subtitle>
+      </StyledLink>
+      <ProjectImage fluid={edges[1].node.frontmatter.featuredImage.childImageSharp.fluid} />
     </Project>
     <Project>
-      <Subtitle>Project 3</Subtitle>
+    <StyledLink to={edges[2].node.fields.slug}>
+        <Subtitle>{edges[2].node.frontmatter.title}</Subtitle>
+      </StyledLink>
+      <ProjectImage fluid={edges[2].node.frontmatter.featuredImage.childImageSharp.fluid} />
     </Project>
     <Project>
-      <Subtitle>Project 4</Subtitle>
+    <StyledLink to={edges[3].node.fields.slug}>
+        <Subtitle>{edges[3].node.frontmatter.title}</Subtitle>
+      </StyledLink>
+      <ProjectImage fluid={edges[3].node.frontmatter.featuredImage.childImageSharp.fluid} />
     </Project>
   </Wrapper>
 )
-
-export const query = graphql`
-  query {
-    file (relativeDirectory: {eq: "images"}) {
-      childImageSharp {
-        fluid(maxWidth: 300) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`
 
 export default Portfolio
