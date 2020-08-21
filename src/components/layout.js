@@ -28,6 +28,10 @@ const Layout = ({ children }) => {
             href
             link
           }
+          menuLinks {
+            name
+            href
+          }
         }
       }
       file (relativePath: { eq: "capybara.jpg" }) {
@@ -44,7 +48,7 @@ const Layout = ({ children }) => {
     <>
     <GlobalStyle />
       <Wrapper>
-        <Header siteTitle={data.site.siteMetadata.title}  />
+        <Header siteTitle={data.site.siteMetadata.title} menuLinks={data.site.siteMetadata.menuLinks} />
         <Img fluid={data.file.childImageSharp.fluid} />
         <div>{children}</div>
       </Wrapper>

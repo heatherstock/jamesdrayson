@@ -17,12 +17,12 @@ module.exports = {
         link:'https://www.instagram.com/draysonandstock/'
       }
     ],
-    // menuLinks: [
-    //   {
-    //     name:'Contact',
-    //     link:'#contact'
-    //   }
-    // ]
+    menuLinks: [
+      {
+        name:'Contact',
+        href:'#contact'
+      }
+    ]
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
