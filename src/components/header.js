@@ -31,9 +31,39 @@ const TitleLink = styled(Link)`
   text-decoration: none;
 `;
 
+// const NavLink = styled(Link)`
+//   color: black;
+//   text-decoration: none;
+// `;
+
+// const List = styled.ul`
+//   display: flex;
+//   flex: 1;
+// `;
+
+// const ListItem = styled.li`
+// @media (max-width: 600px) {
+//   padding: 0 18px;
+// }
+// @media (min-width: 600px) {
+//   padding: 0 40px;
+// }
+//   list-style-type: none;
+//   margin-top: 36px;
+// `;
+
 const Header = ({ siteTitle }) => (
   <Wrapper>
     <TitleLink to="/">{siteTitle}</TitleLink>
+    {/* <div>
+        <List>
+          {menuLinks.map(link => (
+            <ListItem key={link.name}>
+              <NavLink to={link.link}>{link.name}</NavLink>
+            </ListItem>
+          ))}
+        </List>
+        </div> */}
   </Wrapper>
 )
 

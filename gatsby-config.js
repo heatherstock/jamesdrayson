@@ -1,8 +1,28 @@
 module.exports = {
   siteMetadata: {
     title: `James Drayson`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    description: `Personal portfolio`,
+    author: `@jamesdrayson`,
+    contactLinks: [
+      {
+        name:'jamesdrayson@icloud.com',
+        href:'mailto:jamesdrayson@icloud.com'
+      },
+      {
+        name:'LinkedIn',
+        link:'https://www.linkedin.com/in/james-drayson/'
+      },
+      {
+        name:'Instagram',
+        link:'https://www.instagram.com/draysonandstock/'
+      }
+    ],
+    // menuLinks: [
+    //   {
+    //     name:'Contact',
+    //     link:'#contact'
+    //   }
+    // ]
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
