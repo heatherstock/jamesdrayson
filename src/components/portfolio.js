@@ -17,7 +17,7 @@ const Project = styled.div`
 `
 
 export const Subtitle = styled.h2`
-
+  margin: 8px 0;
 `;
 
 export const StyledLink = styled(Link)`
@@ -35,11 +35,12 @@ export const ProjectImage = styled(Img)`
 
 const Heading = styled.h1`
 grid-column: span 12;
+margin: 8px 0;
 `
 
 const Portfolio = ({ edges }) => (
   <Wrapper>
-  <Heading><a id='portfolio'>Portfolio</a></Heading>
+    <Heading id='portfolio'>Portfolio</Heading>
     <Project>
       <StyledLink to={edges[0].node.fields.slug}>
         <Subtitle>{edges[0].node.frontmatter.title}</Subtitle>

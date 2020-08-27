@@ -40,7 +40,7 @@ const Footer = ({ contactLinks }) => (
   <Wrapper>
     <div>
         <List>
-          <Heading><a id='contact'>Contact</a></Heading>
+          <Heading id='contact'>Contact</Heading>
           {contactLinks.map(link => (
             <ListItem key={link.name}>
               {link.link 

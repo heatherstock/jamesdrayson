@@ -23,7 +23,7 @@ const Layout = ({ children }) => {
           }
           menuLinks {
             name
-            href
+            link
           }
         }
       }

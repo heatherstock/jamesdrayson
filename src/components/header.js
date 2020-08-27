@@ -1,7 +1,8 @@
-import { Link } from "gatsby"
+import { AnchorLink } from "gatsby-plugin-anchor-links";
+import { Link } from 'gatsby';
 import styled from "styled-components";
-import PropTypes from "prop-types"
-import React from "react"
+import PropTypes from "prop-types";
+import React from "react";
 
 const Wrapper = styled.header`
   position: sticky;
@@ -10,7 +11,6 @@ const Wrapper = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 5px solid #154726;
   background: white;
 `;
 
@@ -20,18 +20,18 @@ const TitleLink = styled(Link)`
   line-height: 40px
 }
 @media (min-width: 600px) {
-  font-size: 72px;
-  line-height: 72px;
+  font-size: 42px;
+  line-height: 40px;
 }
   font-family: Work Sans, sans serif;
   font-weight: 800;
-  margin: 16px 0;
+  // margin: 16px 0;
   flex: 1;
   color: palevioletred;
   text-decoration: none;
 `;
 
-const NavLink = styled(Link)`
+const NavLink = styled(AnchorLink)`
   color: black;
   text-decoration: none;
 `;
@@ -49,7 +49,7 @@ const ListItem = styled.li`
   padding: 0 40px;
 }
   list-style-type: none;
-  margin-top: 36px;
+  // margin-top: 36px;
 `;
 
 const Header = ({ siteTitle, menuLinks }) => (
@@ -59,7 +59,7 @@ const Header = ({ siteTitle, menuLinks }) => (
         <List>
           {menuLinks.map(link => (
             <ListItem key={link.name}>
-              <NavLink href={link.href}>{link.name}</NavLink>
+              <NavLink to={link.link}>{link.name}</NavLink>
             </ListItem>
           ))}
         </List>
