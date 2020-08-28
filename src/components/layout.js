@@ -8,6 +8,7 @@ import { GlobalStyle } from "../theme";
 
 const Wrapper = styled.div`
 padding-bottom: 56px;
+margin: 30px 60px 0;
 `;
 
 const Layout = ({ children }) => {

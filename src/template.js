@@ -3,15 +3,12 @@ import styled from "styled-components"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
 import Layout from "./components/layout"
+import { GlobalStyle } from "./theme";
 
 export default ({ data }) => {
   const Heading = styled.h1`
-  @media (max-width: 399px) {
-    font-size: 36px;
-    line-height: 42px;
-  }
   font-size: 42px;
-  line-height: 48px;
+  line-height: 56px;
 
 `;
 
@@ -20,16 +17,13 @@ const Wrapper = styled.div`
   margin: auto;
 `;
 
-const Text = styled.div`
-@media (max-width: 399px) {
-  font-size: 17px;
-  line-height: 24px;
-}
-  font-size: 19px;
-  line-height: 30px;
+const Text = styled.p`
+
 `;
 
   return (
+    <>
+    <GlobalStyle />
     <Layout>
       <Wrapper>
         <Heading>{data.markdownRemark.frontmatter.title}</Heading>
@@ -37,6 +31,7 @@ const Text = styled.div`
         <Text dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
       </Wrapper>
     </Layout>
+    </ >
   )
 }
 

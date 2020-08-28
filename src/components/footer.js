@@ -22,7 +22,7 @@ color: black;
 text-decoration: none;
 &:hover {
   text-decoration: underline;
-  text-decoration-color: #154726;
+  text-decoration-color: #4d66ff;
 }
 `
 

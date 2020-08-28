@@ -19,16 +19,16 @@ module.exports = {
     ],
     menuLinks: [
       {
-        name:'Contact',
-        link:'/#contact'
+        name:'About',
+        link:'/#about'
       },
       {
         name:'Portfolio',
         link:'/#portfolio'
       },
       {
-        name:'About',
-        link:'/#about'
+        name:'Contact',
+        link:'/#contact'
       }
     ]
   },

@@ -18,13 +18,15 @@ const Project = styled.div`
 
 export const Subtitle = styled.h2`
   margin: 8px 0;
+  font-size: 42px;
+  line-height: 56px;
 `;
 
 export const StyledLink = styled(Link)`
   text-decoration: none;
   &:hover {
     text-decoration: underline;
-    text-decoration-color: #154726;
+    text-decoration-color: #4d66ff;
   }
 `;
 
@@ -36,6 +38,8 @@ export const ProjectImage = styled(Img)`
 const Heading = styled.h1`
 grid-column: span 12;
 margin: 8px 0;
+font-size: 42px;
+line-height: 56px;
 `
 
 const Portfolio = ({ edges }) => (

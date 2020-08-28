@@ -8,13 +8,14 @@ export const GlobalStyle = createGlobalStyle`
     position: relative;
     min-height: 100vh;
     max-width: 100%;
-    // overflow-x: hidden;
-    color: #154726;
-
+    color: black;
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 32px;
   }
   h1, h2, h3 {
     font-family: Work Sans, 'sans serif';
-    color: #154726;
+    color: #4d66ff;
     font-weight: 800;
   }
 `;
