@@ -1,7 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 import { graphql } from "gatsby"
-import Img from "gatsby-image"
 import Layout from "./components/layout"
 import { GlobalStyle } from "./theme";
 
@@ -27,7 +26,6 @@ const Text = styled.p`
     <Layout>
       <Wrapper>
         <Heading>{data.markdownRemark.frontmatter.title}</Heading>
-        <Img fluid={data.markdownRemark.frontmatter.featuredImage.childImageSharp.fluid} />
         <Text dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
       </Wrapper>
     </Layout>
@@ -41,13 +39,6 @@ export const query = graphql`
       html
       frontmatter {
         title
-        featuredImage {
-          childImageSharp {
-            fluid(maxWidth: 800) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
       }
     }
   }

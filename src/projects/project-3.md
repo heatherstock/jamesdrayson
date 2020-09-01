@@ -1,6 +1,5 @@
 ---
 title: 'Project Three'
-featuredImage: ../images/quokka.jpg
 path: "/project-3"
 display: 3
 ---

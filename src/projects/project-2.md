@@ -1,6 +1,5 @@
 ---
 title: 'Project Two'
-featuredImage: ../images/puppy.jpg
 path: "/project-2"
 display: 2
 ---

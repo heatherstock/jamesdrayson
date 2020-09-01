@@ -13,6 +13,7 @@ const Wrapper = styled.header`
   align-items: center;
   background: white;
   margin: 0;
+  border-bottom: 8px solid white;
 `;
 
 const TitleLink = styled(Link)`
@@ -37,11 +38,11 @@ const NavLink = styled(AnchorLink)`
 const List = styled.ul`
   display: flex;
   flex: 1;
-  padding: 0;
+  margin: 0;
 `;
 
 const ListItem = styled.li`
-  padding: 0 40px;
+  padding: 14px 15px 0;
   list-style-type: none;
 `;
 

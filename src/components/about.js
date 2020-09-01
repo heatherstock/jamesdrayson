@@ -9,6 +9,7 @@ const Heading = styled.h1`
 margin: 8px 0;
 font-size: 42px;
 line-height: 56px;
+color: black;
 `
 
 const Content = styled.p`

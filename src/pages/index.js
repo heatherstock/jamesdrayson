@@ -23,13 +23,6 @@ const IndexPage = () => {
             id
             frontmatter {
               title
-              featuredImage {
-                childImageSharp {
-                  fluid(maxWidth: 300) {
-                    ...GatsbyImageSharpFluid
-                  }
-                }
-              }
             }
             fields {
               slug
