@@ -1,21 +1,13 @@
 import React from "react"
-import Img from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/layout"
-import Portfolio from "../components/portfolio"
-import About from "../components/about"
-import { GlobalStyle } from "../theme";
+import Work from "../components/work"
+import Intro from "../components/intro"
+import Contact from "../components/contact"
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
     query {
-      file (relativePath: { eq: "capybara.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
       allMarkdownRemark(sort: {order: ASC, fields: frontmatter___display}) {
         totalCount
         edges {
@@ -35,11 +27,10 @@ const IndexPage = () => {
 
   return (
     <>
-    <GlobalStyle />
       <Layout home={true}>
-        <Img fluid={data.file.childImageSharp.fluid} />
-        <About />
-        <Portfolio edges={data.allMarkdownRemark.edges}/>
+        <Intro />
+        <Work edges={data.allMarkdownRemark.edges}/>
+        <Contact />
       </Layout>
     </>
   )

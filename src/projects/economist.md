@@ -1,6 +1,6 @@
 ---
-title: 'Project Four'
-path: "/project-4"
+title: 'The Economist'
+path: "/economist"
 display: 4
 ---
 

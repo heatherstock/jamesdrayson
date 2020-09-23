@@ -20,11 +20,11 @@ module.exports = {
     menuLinks: [
       {
         name:'About',
-        link:'/#about'
+        link:'/about'
       },
       {
-        name:'Portfolio',
-        link:'/#portfolio'
+        name:'Work',
+        link:'/#work'
       },
       {
         name:'Contact',
@@ -64,9 +64,6 @@ module.exports = {
     },
     {
       resolve: "gatsby-plugin-anchor-links",
-      options: {
-        offset: -70
-      }
     },
     `gatsby-plugin-sharp`,
     {

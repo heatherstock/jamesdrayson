@@ -1,6 +1,6 @@
 ---
-title: 'Project Three'
-path: "/project-3"
+title: 'Financial Times'
+path: "/ft"
 display: 3
 ---
 
