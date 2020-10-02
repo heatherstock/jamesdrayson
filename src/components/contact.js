@@ -6,6 +6,7 @@ background-color: #4d66ff
 `;
 
 const Heading = styled.h2`
+color: black;
 padding: 200px 20px;
 `
 
