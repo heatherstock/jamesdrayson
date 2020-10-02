@@ -13,10 +13,6 @@ height: 56px;
 border-top: 1px solid #154726;
 `;
 
-const Heading = styled.h2`
-margin: auto 20px;
-`
-
 const ContactLink = styled(Link)`
 color: black;
 text-decoration: none;
