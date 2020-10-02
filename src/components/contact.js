@@ -10,9 +10,9 @@ color: black;
 padding: 200px 20px;
 `
 
-const Contact = ({ contactLinks }) => (
+const Contact = () => (
   <Wrapper>
-    <Heading>Get in touch</Heading>
+    <Heading id='contact'>Get in touch</Heading>
   </Wrapper>
 )
 
