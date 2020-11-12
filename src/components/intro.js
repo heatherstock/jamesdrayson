@@ -6,16 +6,19 @@ const Wrapper = styled.div`
 `;
 
 const Content = styled.p`
-margin-right: 465px;
+  font-family: Work Sans, sans serif;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 64px;
+  margin: 0;
 `
 
 const Intro = () => (
   <Wrapper>
-    <Content>
-        James is a digital designer and letterpress printer with a passion for beautiful typography and a 
-        thing for nice paper. He creates beautiful letterpress wedding stationery, greetings cards and prints 
-        using antique type and printing equipment, and is usually found covered in ink or oil (or both!).
-    </Content>
+    <Content>—</Content>
+    <Content>Product Designer,</Content>
+    <Content>Typographer</Content>
+    <Content>& Letterpress Printer</Content>
   </Wrapper>
 )
 

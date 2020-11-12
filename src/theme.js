@@ -10,8 +10,8 @@ export const GlobalStyle = createGlobalStyle`
     max-width: 100%;
     color: black;
     font-weight: 800;
-    font-size: 22px;
     line-height: 32px;
+    background: #e4e4e4;
   }
   h1, h2, h3 {
     font-family: Work Sans, 'sans serif';

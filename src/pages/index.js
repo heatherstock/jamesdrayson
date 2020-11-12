@@ -3,6 +3,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/layout"
 import Work from "../components/work"
 import Intro from "../components/intro"
+import About from "../components/about"
 import Contact from "../components/contact"
 
 const IndexPage = () => {
@@ -27,8 +28,9 @@ const IndexPage = () => {
 
   return (
     <>
-      <Layout home={true}>
+      <Layout>
         <Intro />
+        <About />
         <Work edges={data.allMarkdownRemark.edges}/>
         <Contact />
       </Layout>
