@@ -11,38 +11,51 @@ const Wrapper = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: white;
+  background: #e4e4e4;
   margin: 0;
-  border-bottom: 8px solid white;
 `;
 
 const TitleLink = styled(Link)`
   font-family: Work Sans, sans serif;
-  font-weight: 800;
-  font-size: 42px;
-  line-height: 56px;
-  padding-bottom: 3px;
-  border-bottom: 9px solid #4d66ff;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 64px;
+  padding-bottom: 4px;
+  &:hover {
+    border-bottom: 4px solid black;
+  }
   flex: 1;
-  color: #4d66ff;
+  color: black;
   text-decoration: none;
 `;
 
 const NavLink = styled(AnchorLink)`
-  color: #4d66ff;
+  font-family: Work Sans, sans serif;
+  font-weight: 500;
+  margin-left: 12px;
+  font-size: 48px;
+  line-height: 64px;
+  padding-bottom: 4px;
+  color: black;
   text-decoration: none;
-  padding-bottom: 2px;
-  border-bottom: 6px solid #4d66ff;
+  &:hover {
+    border-bottom: 4px solid black;
+  }
 `;
 
 const List = styled.ul`
   display: flex;
   flex: 1;
   margin: 0;
+  padding-left: 12px;
 `;
 
 const ListItem = styled.li`
-  padding: 14px 15px 0;
+  padding: 0 6px;
+  font-family: Work Sans, sans serif;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 60px;
   list-style-type: none;
 `;
 
@@ -52,18 +65,16 @@ const Div = styled.div`
 
 const Header = ({ siteTitle, menuLinks }) => (
   <Wrapper>
-    <div>
-      <TitleLink to="/">{siteTitle}</TitleLink>
-    </div>
     <Div>
+      <TitleLink to="/">{siteTitle}</TitleLink>
+    </Div>
       <List>
         {menuLinks.map(link => (
-          <ListItem key={link.name}>
+          <ListItem key={link.name}>/
             <NavLink to={link.link}>{link.name}</NavLink>
           </ListItem>
         ))}
       </List>
-    </Div>
   </Wrapper>
 )
 
