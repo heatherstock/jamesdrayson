@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components";
 
 const Wrapper = styled.div`
-  margin: 32px 0;
+  margin: 0;
 `;
 
 const Heading = styled.h1`
