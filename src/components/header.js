@@ -19,10 +19,10 @@ const Wrapper = styled.header`
 const TitleLink = styled(AnchorLink)`
   font-family: Work Sans, sans serif;
   font-weight: 500;
-  font-size: 42px;
-  line-height: 60px;
+  font-size: 36px;
+  line-height: 48px;
   padding-bottom: 2px;
-  border-bottom: 4px solid black;
+  border-bottom: 3px solid black;
   flex: 1;
   color: black;
   text-decoration: none;
@@ -32,12 +32,12 @@ const NavLink = styled(AnchorLink)`
   font-family: Work Sans, sans serif;
   font-weight: 500;
   margin-left: 12px;
-  font-size: 42px;
-  line-height: 60px;
+  font-size: 36px;
+  line-height: 48px;
   padding-bottom: 2px;
   color: black;
   text-decoration: none;
-  border-bottom: 4px solid black;
+  border-bottom: 3px solid black;
 `;
 
 const List = styled.ul`
@@ -51,8 +51,8 @@ const ListItem = styled.li`
   padding: 0 6px;
   font-family: Work Sans, sans serif;
   font-weight: 500;
-  font-size: 42px;
-  line-height: 60px;
+  font-size: 36px;
+  line-height: 48px;
   list-style-type: none;
 `;
 

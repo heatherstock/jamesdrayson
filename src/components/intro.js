@@ -8,8 +8,8 @@ const Wrapper = styled.div`
 const Content = styled.p`
   font-family: Work Sans, sans serif;
   font-weight: 500;
-  font-size: 42px;
-  line-height: 54px;
+  font-size: 36px;
+  line-height: 48px;
   margin: 0;
 `
 

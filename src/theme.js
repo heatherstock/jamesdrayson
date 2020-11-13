@@ -3,7 +3,7 @@ import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
   body {
-    margin: auto;
+    margin: 0px;
     font-family: Work Sans, 'sans serif';
     position: relative;
     min-height: 100vh;

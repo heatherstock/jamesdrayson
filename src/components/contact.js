@@ -5,15 +5,15 @@ import Image from "../components/image"
 
 const Wrapper = styled.div`
 padding-bottom: 72px;
-border-bottom: 4px solid black;
+border-bottom: 3px solid black;
 `;
 
 const Heading = styled.h1`
   font-family: Work Sans, sans serif;
   font-weight: 500;
   margin-left: 12px;
-  font-size: 42px;
-  line-height: 60px;
+  font-size: 36px;
+  line-height: 48px;
   margin: 0;
   color: black;
 `
@@ -21,12 +21,12 @@ const Heading = styled.h1`
 const ContactLink = styled(Link)`
   font-family: Work Sans, sans serif;
   font-weight: 500;
-  font-size: 42px;
-  line-height: 60px;
+  font-size: 36px;
+  line-height: 48px;
   padding-bottom: 2px;
   color: black;
   text-decoration: none;
-  border-bottom: 4px solid black;
+  border-bottom: 3px solid black;
   margin-left: 12px;
 `;
 
@@ -41,8 +41,8 @@ const ListItem = styled.li`
   padding: 0 6px;
   font-family: Work Sans, sans serif;
   font-weight: 500;
-  font-size: 42px;
-  line-height: 60px;
+  font-size: 36px;
+  line-height: 48px;
   list-style-type: none;
 `;
 
