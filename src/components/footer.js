@@ -1,52 +1,25 @@
-import { Link } from "gatsby"
 import React from "react"
 import styled from "styled-components";
 
 const Wrapper = styled.footer`
 position: absolute;
-display: flex;
-align-items: center;
-justify-content: center;
-bottom: 0;
 width: 100%;
-height: 56px;
-border-top: 1px solid #154726;
+height: 48px;
+padding-bottom: 36px;
+padding-left: 72px;
 `;
 
-const ContactLink = styled(Link)`
-color: black;
-text-decoration: none;
-&:hover {
-  text-decoration: underline;
-  text-decoration-color: #4d66ff;
-}
-`
-
-const List = styled.ul`
-display: flex;
-flex: 1;
-`;
-
-const ListItem = styled.li`
-  margin: auto 20px;
+const ListItem = styled.div`
+  font-family: Work Sans, sans serif;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 60px;
   list-style-type: none;
 `;
 
 const Footer = ({ contactLinks }) => (
   <Wrapper>
-    <div>
-        <List>
-          {contactLinks.map(link => (
-            <ListItem key={link.name}>
-              {link.link 
-              ? <ContactLink to={link.link} target='_blank'>{link.name}</ContactLink>
-              : <ContactLink href={link.href}>{link.name}</ContactLink>
-            }
-            </ListItem>
-          ))}
-          <ListItem>©{new Date().getFullYear()} James Drayson</ListItem>
-        </List>
-        </div>
+    <ListItem>©{new Date().getFullYear()} James Drayson</ListItem>
   </Wrapper>
 )
 

@@ -7,8 +7,7 @@ import Footer from "./footer"
 import { GlobalStyle } from "../theme";
 
 const Wrapper = styled.div`
-padding-bottom: 56px;
-margin: 48px 72px 0;
+margin: 0 72px;
 `;
 
 const Layout = ({ children }) => {
@@ -28,20 +27,13 @@ const Layout = ({ children }) => {
           }
         }
       }
-      file (relativePath: { eq: "capybara.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
     }
   `)
 
   return (
     <>
     <GlobalStyle />
-      <Wrapper>
+      <Wrapper id="home">
         <Header siteTitle={data.site.siteMetadata.title} menuLinks={data.site.siteMetadata.menuLinks} />
         <div>{children}</div>
       </Wrapper>

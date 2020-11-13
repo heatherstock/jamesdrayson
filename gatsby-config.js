@@ -5,7 +5,7 @@ module.exports = {
     author: `@jamesdrayson`,
     contactLinks: [
       {
-        name:'jamesdrayson@icloud.com',
+        name:'Email',
         href:'mailto:jamesdrayson@icloud.com'
       },
       {
@@ -62,7 +62,12 @@ module.exports = {
         ],
       },
     },
-    `gatsby-plugin-anchor-links`,
+    {
+      resolve: "gatsby-plugin-anchor-links",
+      options: {
+        offset: -44,
+      }
+    },
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
