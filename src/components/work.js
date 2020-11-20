@@ -12,6 +12,7 @@ const Heading = styled.h1`
   font-size: 36px;
   line-height: 48px;
   margin: 0;
+  margin-bottom: 12px;
   color: black;
 `
 

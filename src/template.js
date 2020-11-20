@@ -7,7 +7,7 @@ import { GlobalStyle } from "./theme";
 export default ({ data }) => {
   const Heading = styled.h1`
   margin-top: 6px;
-  margin-bottom: 12px;
+  padding-bottom: 12px;
   font-size: 36px;
   line-height: 48px;
   color: black;
