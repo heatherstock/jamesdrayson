@@ -60,7 +60,6 @@ const ListItem = styled.li`
 
 const Div = styled.div`
   margin: 0;
-  padding-left: 72px;
 `
 
 const Header = ({ siteTitle, menuLinks }) => (

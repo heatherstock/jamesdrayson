@@ -33,8 +33,8 @@ const Layout = ({ children }) => {
   return (
     <>
     <GlobalStyle />
-      <Header siteTitle={data.site.siteMetadata.title} menuLinks={data.site.siteMetadata.menuLinks} />
       <Wrapper id="home">
+      <Header siteTitle={data.site.siteMetadata.title} menuLinks={data.site.siteMetadata.menuLinks} />
         <div>{children}</div>
       </Wrapper>
       <Footer contactLinks={data.site.siteMetadata.contactLinks}/>
