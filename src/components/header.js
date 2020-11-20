@@ -33,11 +33,6 @@ const TitleLink = styled(AnchorLink)`
   &: active {
     border-bottom: 3px solid black;
   }
-  &: focus {
-    border-bottom: 6px solid black;
-    background-color: #ccc;
-    outline: none;
-  }
 `;
 
 const NavLink = styled(AnchorLink)`
@@ -56,11 +51,6 @@ const NavLink = styled(AnchorLink)`
   }
   &: active {
     border-bottom: 3px solid black;
-  }
-  &: focus {
-    border-bottom: 6px solid black;
-    background-color: #ccc;
-    outline: none;
   }
 `;
 
