@@ -56,7 +56,8 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 590,
+              maxWidth: 1400,
+              backgroundColor: "#eeeeee",
             },
           },
         ],
@@ -65,7 +66,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-anchor-links",
       options: {
-        offset: -44,
+        offset: -90,
       }
     },
     `gatsby-plugin-sharp`,
