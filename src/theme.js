@@ -11,7 +11,7 @@ export const GlobalStyle = createGlobalStyle`
     color: black;
     font-weight: 800;
     line-height: 32px;
-    background: #e4e4e4;
+    background: #eeeeee;
   }
   h1, h2, h3 {
     font-family: Work Sans, 'sans serif';

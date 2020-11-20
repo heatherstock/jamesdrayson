@@ -10,10 +10,10 @@ const Wrapper = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #e4e4e4;
+  background: #eeeeee;
   margin: 0;
-  border-bottom: 18px solid #e4e4e4;
-  border-top: 18px solid #e4e4e4;
+  border-bottom: 18px solid #eeeeee;
+  border-top: 18px solid #eeeeee;
 `;
 
 const TitleLink = styled(AnchorLink)`
@@ -42,6 +42,8 @@ const NavLink = styled(AnchorLink)`
 
 const List = styled.ul`
   display: flex;
+// could do media query to remove flex at small sizes.
+// also think about resizing font
   flex: 1;
   margin: 0;
   padding-left: 12px;
@@ -58,6 +60,7 @@ const ListItem = styled.li`
 
 const Div = styled.div`
   margin: 0;
+  padding-left: 72px;
 `
 
 const Header = ({ siteTitle, menuLinks }) => (
