@@ -26,6 +26,18 @@ const TitleLink = styled(AnchorLink)`
   flex: 1;
   color: black;
   text-decoration: none;
+  &:hover {
+    color: black;
+    border-bottom: none;
+  }
+  &: active {
+    border-bottom: 3px solid black;
+  }
+  &: focus {
+    border-bottom: 6px solid black;
+    background-color: #ccc;
+    outline: none;
+  }
 `;
 
 const NavLink = styled(AnchorLink)`
@@ -38,6 +50,18 @@ const NavLink = styled(AnchorLink)`
   color: black;
   text-decoration: none;
   border-bottom: 3px solid black;
+  &:hover {
+    color: black;
+    border-bottom: none;
+  }
+  &: active {
+    border-bottom: 3px solid black;
+  }
+  &: focus {
+    border-bottom: 6px solid black;
+    background-color: #ccc;
+    outline: none;
+  }
 `;
 
 const List = styled.ul`
