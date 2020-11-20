@@ -6,8 +6,6 @@ import { GlobalStyle } from "./theme";
 
 export default ({ data }) => {
   const Heading = styled.h1`
-  font-family: Work Sans, sans serif;
-  font-weight: 500;
   margin-top: 6px;
   margin-bottom: 12px;
   font-size: 36px;
@@ -21,7 +19,6 @@ const Wrapper = styled.div`
 `;
 
 const Text = styled.p`
-font-family: Libre Baskerville, serif;
 font-weight: 400;
 font-size: 24px;
 line-height: 36px;

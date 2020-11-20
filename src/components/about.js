@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components";
-import "fontsource-libre-baskerville"
 
 const Wrapper = styled.div`
   margin: 0;
@@ -8,8 +7,6 @@ const Wrapper = styled.div`
 `;
 
 const Heading = styled.h1`
-  font-family: Work Sans, sans serif;
-  font-weight: 500;
   margin-left: 12px;
   font-size: 36px;
   line-height: 48px;
@@ -18,12 +15,11 @@ const Heading = styled.h1`
 `
 
 const Content = styled.p`
-  font-family: Libre Baskerville, serif;
-  font-weight: 400;
   font-size: 24px;
   line-height: 36px;
   margin: 0;
-  text-indent: 36px;
+  padding-top: 18px;
+  max-width: 960px;
 `
 
 const style = {

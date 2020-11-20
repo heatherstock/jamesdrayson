@@ -8,8 +8,6 @@ const Wrapper = styled.div`
 `;
 
 const Heading = styled.h1`
-  font-family: Work Sans, sans serif;
-  font-weight: 500;
   margin-left: 12px;
   font-size: 36px;
   line-height: 48px;
