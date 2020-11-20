@@ -4,7 +4,7 @@ path: "/ft"
 display: 3
 ---
 
-Cras laoreet mattis eleifend. Nullam nisi neque, dapibus sed tortor eget, luctus consequat arcu. Quisque at metus non sapien iaculis molestie a bibendum justo. Aenean leo arcu, scelerisque et condimentum placerat, faucibus in diam. Nam rutrum, odio congue scelerisque posuere, ex dui lobortis urna, sit amet molestie elit neque eu leo. Suspendisse non ornare lectus. Quisque vestibulum, dolor in scelerisque viverra, tortor erat pretium est, in porta sapien eros quis quam. Mauris lobortis maximus ipsum, ac aliquet nisi euismod eget. Nulla id purus non nulla euismod eleifend in eget ex. Mauris ac mattis libero. Ut sed nisl neque. Ut sodales tellus dignissim urna tristique rhoncus. Integer nec viverra felis, vitae ullamcorper tortor. Maecenas a venenatis dolor, sit amet tincidunt massa. Duis condimentum erat sed neque tristique iaculis.
+Working across several streams within Product & Technology, including Acquisition and GPDR. Working closely with developers, product owners, the legal team and stakeholders to successfully meet a number of briefs. For GDPR I worked on a number of initiatives to help the FT become compliant while ensuring any new controls and pages required were concise and fully accessible. Throughout my time at the FT I worked very closely with the Origami team to define and maintain a component library for use by both internal and external products, including FT.com and the Apps. Most recently, I was defining a new design system and exploring how we encourage more designers and developers to use the libraries, while also considering core experience and championing accessibility.
 
 ![a](../images/ft-barrier-bottom-desktop.png)
 ![b](../images/ft-barrier-dyanmic-world-desktop.png)

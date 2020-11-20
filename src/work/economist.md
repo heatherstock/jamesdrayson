@@ -4,7 +4,7 @@ path: "/economist"
 display: 4
 ---
 
-Cras laoreet mattis eleifend. Nullam nisi neque, dapibus sed tortor eget, luctus consequat arcu. Quisque at metus non sapien iaculis molestie a bibendum justo. Aenean leo arcu, scelerisque et condimentum placerat, faucibus in diam. Nam rutrum, odio congue scelerisque posuere, ex dui lobortis urna, sit amet molestie elit neque eu leo. Suspendisse non ornare lectus. Quisque vestibulum, dolor in scelerisque viverra, tortor erat pretium est, in porta sapien eros quis quam. Mauris lobortis maximus ipsum, ac aliquet nisi euismod eget. Nulla id purus non nulla euismod eleifend in eget ex. Mauris ac mattis libero. Ut sed nisl neque. Ut sodales tellus dignissim urna tristique rhoncus. Integer nec viverra felis, vitae ullamcorper tortor. Maecenas a venenatis dolor, sit amet tincidunt massa. Duis condimentum erat sed neque tristique iaculis.
+Working as part of a cross functional team designing for the master brand including ‘The World If’ (both the 2015 and 2016 editions) and ‘Technology Quarterly’ sub brands, and its sister publication The World In. Working closely with other designers, UX and developers to iterate on design concepts to ensure fully responsive solutions to briefs set by both the Creative Digital Art Director and editorial were realised. Designing social media templates, working with the New York City office to ensure The Economist’s presence on ‘Facebook Instant Articles’ was on brand, and helping to create a more immersive experience for readers of The Economist’s ‘Essays’ and it’s other long form content.
 
 ![b](../images/the-economist-tq-desktop.png)
 ![a](../images/the-economist-tq-mobile.png)

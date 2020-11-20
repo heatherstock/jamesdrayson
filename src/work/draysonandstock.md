@@ -3,7 +3,8 @@ title: 'Drayson & Stock'
 path: "/draysonandstock"
 display: 2
 ---
-Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. TEST
+  
+Setting up and running a design and letterpress studio. Working on a range of projects, including the design of a full set of icons for the Financial Times to use on the new ft.com, printing letterpress invitations for Intelligent Life Magazine, and the branding of a number for small companies. Designing and printing letterpress printed products.
 
 ![a](../images/drayson-and-stock-arrow-back.png)
 ![b](../images/drayson-and-stock-arrow-card-front.png)
