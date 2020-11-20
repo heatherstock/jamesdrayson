@@ -23,21 +23,21 @@ const IndexPage = () => {
           }
         }
       }
-      printersFist: file(relativePath: { eq: "printer's-fist.png" }) {
+      printersFist: file(relativePath: { eq: "james-drayson-drayson-and-stock-printer's-fist.png" }) {
         childImageSharp {
           fixed(width: 434, height: 1238) {
             ...GatsbyImageSharpFixed
           }
         }
       }
-      ft: file(relativePath: { eq: "FT-barrier-homepage.png" }) {
+      ft: file(relativePath: { eq: "james-drayson-ft-barrier.png" }) {
         childImageSharp {
           fixed(width: 1551, height: 785) {
             ...GatsbyImageSharpFixed
           }
         }
       }
-      breakfast: file(relativePath: { eq: "make-breakfast.png" }) {
+      breakfast: file(relativePath: { eq: "james-drayson-drayson-and-stock-make-breakfast-a-success.png" }) {
         childImageSharp {
           fixed(width: 1296, height: 810) {
             ...GatsbyImageSharpFixed
