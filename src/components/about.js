@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const Wrapper = styled.div`
   margin: 0;
-  padding-bottom: 60px;
+  padding-bottom: 18px;
 `;
 
 const Heading = styled.h1`

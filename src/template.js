@@ -14,7 +14,7 @@ export default ({ data }) => {
 `;
 
 const Wrapper = styled.div`
-  padding-bottom: 72px;
+  padding-bottom: 36px;
   border-bottom: 3px solid black; 
 `;
 
@@ -46,11 +46,6 @@ const StyledLink = styled(Link)`
   &: active {
     border-bottom: 3px solid black;
   }
-  &: focus {
-    border-bottom: 6px solid black;
-    background-color: #ccc;
-    outline: none;
-  }
 `;
 
 const List = styled.ul`
@@ -58,6 +53,7 @@ display: flex;
 flex-wrap: wrap;
   margin: 0;
   padding-left: 0px;
+  padding-top: 36px;
 `;
 
 const ListItem = styled.li`
