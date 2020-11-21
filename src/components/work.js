@@ -55,13 +55,13 @@ const ListItem = styled.li`
   list-style-type: none;
 `;
 
-const Work = ({ edges, fixed }) => (
+const Work = ({ workLinks, fixed }) => (
   <Wrapper>
     <Heading id='work'>Work</Heading>
     <List>
-      {edges.map(edge => (
-        <ListItem key={edge.node.frontmatter.title}>/
-          <StyledLink to={edge.node.fields.slug}>{edge.node.frontmatter.title}</StyledLink>
+      {workLinks.map(link => (
+        <ListItem key={link.name}>/
+          <StyledLink to={link.link}>{link.name}</StyledLink>
         </ListItem>
       ))}
     </List>

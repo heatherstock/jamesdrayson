@@ -9,20 +9,6 @@ import Contact from "../components/contact"
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
     query {
-      allMarkdownRemark(sort: {order: ASC, fields: frontmatter___display}) {
-        totalCount
-        edges {
-          node {
-            id
-            frontmatter {
-              title
-            }
-            fields {
-              slug
-            }
-          }
-        }
-      }
       printersFist: file(relativePath: { eq: "james-drayson-drayson-and-stock-printer's-fist.png" }) {
         childImageSharp {
           fixed(width: 434, height: 1238) {
@@ -51,6 +37,10 @@ const IndexPage = () => {
             href
             link
           }
+          workLinks {
+            name
+            link
+          }
         }
       }
     }
@@ -61,7 +51,7 @@ const IndexPage = () => {
       <Layout>
         <Intro fixed={data.printersFist.childImageSharp.fixed} />
         <About />
-        <Work edges={data.allMarkdownRemark.edges} fixed={data.ft.childImageSharp.fixed}/>
+        <Work workLinks={data.site.siteMetadata.workLinks} fixed={data.ft.childImageSharp.fixed}/>
         <Contact contactLinks={data.site.siteMetadata.contactLinks} fixed={data.breakfast.childImageSharp.fixed}/>
       </Layout>
     </>

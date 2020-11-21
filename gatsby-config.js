@@ -30,24 +30,39 @@ module.exports = {
         name:'Contact',
         link:'/#contact'
       }
+    ], 
+    workLinks: [
+      {
+        name:'TES',
+        link:'/tes'
+      },
+      {
+        name:'Drayson & Stock',
+        link:'/draysonandstock'
+      },
+      {
+        name:'Financial Times',
+        link:'/ft'
+      },
+      {
+        name:'The Economist',
+        link:'/economist'
+      },
+      {
+        name:'Everything In Between',
+        link:'/eib'
+      }
     ]
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
-      },
+      }
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `work`,
-        path: `${__dirname}/src/work`,
-      },
-    },
+    `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-transformer-remark`,
