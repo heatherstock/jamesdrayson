@@ -6,6 +6,7 @@ export const GlobalStyle = createGlobalStyle`
   body {
     margin: 0px;
     font-family: Libre Baskerville, serif;
+    overflow-x: hidden;
     position: relative;
     min-height: 100vh;
     max-width: 100%;

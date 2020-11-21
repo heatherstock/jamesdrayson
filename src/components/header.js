@@ -11,9 +11,8 @@ const Wrapper = styled.header`
   justify-content: space-between;
   align-items: center;
   background: #eeeeee;
-  margin: 0;
-  border-bottom: 18px solid #eeeeee;
-  border-top: 18px solid #eeeeee;
+  margin-bottom: 18px;
+  padding: 18px 72px 0;
 `;
 
 const TitleLink = styled(AnchorLink)`
@@ -22,16 +21,15 @@ const TitleLink = styled(AnchorLink)`
   font-size: 36px;
   line-height: 48px;
   padding-bottom: 2px;
-  border-bottom: 3px solid black;
   flex: 1;
   color: black;
   text-decoration: none;
   &:hover {
     color: black;
-    border-bottom: none;
+    border-bottom: 3px solid black;
   }
   &: active {
-    border-bottom: 3px solid black;
+    border-bottom: none;
   }
 `;
 
@@ -44,13 +42,12 @@ const NavLink = styled(AnchorLink)`
   padding-bottom: 2px;
   color: black;
   text-decoration: none;
-  border-bottom: 3px solid black;
   &:hover {
     color: black;
-    border-bottom: none;
+    border-bottom: 3px solid black;
   }
   &: active {
-    border-bottom: 3px solid black;
+    border-bottom: none;
   }
 `;
 
@@ -61,6 +58,8 @@ const List = styled.ul`
   flex: 1;
   margin: 0;
   padding-left: 12px;
+  padding-bottom: 18px;
+  border-bottom: 3px solid black;
 `;
 
 const ListItem = styled.li`
@@ -74,6 +73,8 @@ const ListItem = styled.li`
 
 const Div = styled.div`
   margin: 0;
+  border-bottom: 3px solid black;
+  padding-bottom: 18px;
 `
 
 const Header = ({ siteTitle, menuLinks }) => (

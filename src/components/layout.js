@@ -7,7 +7,10 @@ import Footer from "./footer"
 import { GlobalStyle } from "../theme";
 
 const Wrapper = styled.div`
-margin: 0 72px;
+`;
+
+const Div = styled.div`
+ margin: 0 72px;
 `;
 
 const Layout = ({ children }) => {
@@ -33,10 +36,9 @@ const Layout = ({ children }) => {
   return (
     <>
     <GlobalStyle />
-      <Wrapper id="home">
+      <Wrapper id="home" />
       <Header siteTitle={data.site.siteMetadata.title} menuLinks={data.site.siteMetadata.menuLinks} />
-        <div>{children}</div>
-      </Wrapper>
+        <Div>{children}</Div>
       <Footer contactLinks={data.site.siteMetadata.contactLinks}/>
     </>
   )
