@@ -2,6 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import styled from "styled-components"
 import Layout from "../components/layout"
+import Image from "../components/image"
 
 const FinancialTimes = () => {
   const Heading = styled.h1`
@@ -66,6 +67,69 @@ const ListItem = styled.li`
 
   const data = useStaticQuery(graphql`
     query {
+      barrierMobile01: file(relativePath: { eq: "ft-barrier-mobile-01.png" }) {
+        childImageSharp {
+          fixed(width: 318, height: 682) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      barrierMobile02: file(relativePath: { eq: "ft-barrier-mobile-02.png" }) {
+        childImageSharp {
+          fixed(width: 318, height: 682) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      barrierMobile03: file(relativePath: { eq: "ft-barrier-mobile-03.png" }) {
+        childImageSharp {
+          fixed(width: 318, height: 682) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      barrierDesktop01: file(relativePath: { eq: "ft-barrier-desktop.png" }) {
+        childImageSharp {
+          fixed(width: 1296, height: 734) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      barrierDesktop02: file(relativePath: { eq: "ft-barrier-bottom-desktop.png" }) {
+        childImageSharp {
+          fixed(width: 1296, height: 734) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      dynamicBarrier01: file(relativePath: { eq: "ft-barrier-dynamic-world-desktop.png" }) {
+        childImageSharp {
+          fixed(width: 1296, height: 734) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      dynamicBarrier02: file(relativePath: { eq: "ft-barrier-dynamic-crypto-desktop.png" }) {
+        childImageSharp {
+          fixed(width: 1296, height: 734) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      cookieMessage: file(relativePath: { eq: "ft-cookie-message-desktop.png" }) {
+        childImageSharp {
+          fixed(width: 1296, height: 734) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      settings: file(relativePath: { eq: "ft-settings.png" }) {
+        childImageSharp {
+          fixed(width: 1551, height: 785) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
       site {
         siteMetadata {
           workLinks {
@@ -83,6 +147,15 @@ const ListItem = styled.li`
         <Wrapper>
           <Heading>Financial Times</Heading>
           <Text>Working across several streams within Product & Technology, including Acquisition and GPDR. Working closely with developers, product owners, the legal team and stakeholders to successfully meet a number of briefs. For GDPR I worked on a number of initiatives to help the FT become compliant while ensuring any new controls and pages required were concise and fully accessible. Throughout my time at the FT I worked very closely with the Origami team to define and maintain a component library for use by both internal and external products, including FT.com and the Apps. Most recently, I was defining a new design system and exploring how we encourage more designers and developers to use the libraries, while also considering core experience and championing accessibility.</Text>
+          <Image fixed={data.barrierMobile01.childImageSharp.fixed} style={{paddingRight: 18}} />
+          <Image fixed={data.barrierMobile02.childImageSharp.fixed} />
+          <Image fixed={data.barrierMobile03.childImageSharp.fixed} />
+          <Image fixed={data.barrierDesktop01.childImageSharp.fixed} />
+          <Image fixed={data.barrierDesktop02.childImageSharp.fixed} />
+          <Image fixed={data.dynamicBarrier01.childImageSharp.fixed} />
+          <Image fixed={data.dynamicBarrier02.childImageSharp.fixed} />
+          <Image fixed={data.cookieMessage.childImageSharp.fixed} />
+          <Image fixed={data.settings.childImageSharp.fixed} />
           <List>
             {data.site.siteMetadata.workLinks.map(link => (
               link.name === 'Financial Times'

@@ -2,6 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import styled from "styled-components"
 import Layout from "../components/layout"
+import Image from "../components/image"
 
 const EIB = () => {
   const Heading = styled.h1`
@@ -66,6 +67,27 @@ const ListItem = styled.li`
 
   const data = useStaticQuery(graphql`
     query {
+      piercy01: file(relativePath: { eq: "everything-in-between-piercy-01.png" }) {
+        childImageSharp {
+          fixed(width: 1296, height: 734) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      piercy02: file(relativePath: { eq: "everything-in-between-piercy-02.png" }) {
+        childImageSharp {
+          fixed(width: 1296, height: 734) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      piercy03: file(relativePath: { eq: "everything-in-between-piercy-03.png" }) {
+        childImageSharp {
+          fixed(width: 1296, height: 734) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
       site {
         siteMetadata {
           workLinks {
@@ -83,6 +105,9 @@ const ListItem = styled.li`
       <Wrapper>
         <Heading>Everything In Between</Heading>
         <Text>As a designer working as part of small team on a wide range of projects from branding and signage to digital design.</Text>
+             <Image fixed={data.piercy01.childImageSharp.fixed} />
+             <Image fixed={data.piercy02.childImageSharp.fixed} />
+             <Image fixed={data.piercy03.childImageSharp.fixed} />
         <List>
             {data.site.siteMetadata.workLinks.map(link => (
               link.name === 'Everything In Between'

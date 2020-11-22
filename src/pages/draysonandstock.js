@@ -2,6 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import styled from "styled-components"
 import Layout from "../components/layout"
+import Image from "../components/image"
 
 const DraysonAndStock = () => {
   const Heading = styled.h1`
@@ -66,6 +67,55 @@ const ListItem = styled.li`
 
   const data = useStaticQuery(graphql`
     query {
+      breakfast: file(relativePath: { eq: "james-drayson-drayson-and-stock-make-breakfast-a-success.png" }) {
+        childImageSharp {
+          fixed(width: 1296, height: 734) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      arrowCardFront: file(relativePath: { eq: "drayson-and-stock-arrow-card-front.png" }) {
+        childImageSharp {
+          fixed(width: 1296, height: 734) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      arrowCardBack: file(relativePath: { eq: "drayson-and-stock-arrow-card-back.png" }) {
+        childImageSharp {
+          fixed(width: 1296, height: 734) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      noticeCard: file(relativePath: { eq: "drayson-and-stock-notice.png" }) {
+        childImageSharp {
+          fixed(width: 1296, height: 734) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      happyBelatedCard: file(relativePath: { eq: "drayson-and-stock-happy-belated.png" }) {
+        childImageSharp {
+          fixed(width: 1296, height: 734) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      lookReadPoster01: file(relativePath: { eq: "drayson-and-stock-poster-01.png" }) {
+        childImageSharp {
+          fixed(width: 1296, height: 734) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      lookReadPoster02: file(relativePath: { eq: "drayson-and-stock-poster-02.png" }) {
+        childImageSharp {
+          fixed(width: 1296, height: 734) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
       site {
         siteMetadata {
           workLinks {
@@ -83,6 +133,13 @@ const ListItem = styled.li`
         <Wrapper>
           <Heading>Drayson & Stock</Heading>
           <Text>Setting up and running a design and letterpress studio. Working on a range of projects, including the design of a full set of icons for the Financial Times to use on the new ft.com, printing letterpress invitations for Intelligent Life Magazine, and the branding of a number for small companies. Designing and printing letterpress printed products.</Text>
+          <Image fixed={data.breakfast.childImageSharp.fixed} />
+          <Image fixed={data.arrowCardFront.childImageSharp.fixed} />
+          <Image fixed={data.arrowCardBack.childImageSharp.fixed} />
+          <Image fixed={data.noticeCard.childImageSharp.fixed} />
+          <Image fixed={data.happyBelatedCard.childImageSharp.fixed} />
+          <Image fixed={data.lookReadPoster01.childImageSharp.fixed} />
+          <Image fixed={data.lookReadPoster02.childImageSharp.fixed} />
           <List>
             {data.site.siteMetadata.workLinks.map(link => (
               link.name === 'Drayson & Stock'

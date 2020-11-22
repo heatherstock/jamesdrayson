@@ -10,6 +10,6 @@ const StyledImage = styled(Img)`
 `;
 
 const Image = ({ fixed }) => (
-  <StyledImage fixed={fixed} />
+  <StyledImage fixed={fixed} fadeIn={false}/>
 )
 export default Image

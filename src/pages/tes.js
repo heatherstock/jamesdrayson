@@ -2,6 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import styled from "styled-components"
 import Layout from "../components/layout"
+import Image from "../components/image"
 
 const Tes = () => {
   const Heading = styled.h1`
@@ -66,6 +67,13 @@ const ListItem = styled.li`
 
   const data = useStaticQuery(graphql`
     query {
+      portalToPayForm: file(relativePath: { eq: "tes-portal-to-pay-form.png" }) {
+      childImageSharp {
+        fixed(width: 1296, height: 734) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
       site {
         siteMetadata {
           workLinks {
@@ -83,6 +91,7 @@ const ListItem = styled.li`
       <Wrapper>
         <Heading>TES</Heading>
         <Text>Working on a number of a remote cross-functional teams across the various Tes products. In this role I have also continued to build on the previous success of the Tes Design System and continue to improve it.</Text>
+        <Image fixed={data.portalToPayForm.childImageSharp.fixed} />
         <List>
             {data.site.siteMetadata.workLinks.map(link => (
               link.name === 'TES'

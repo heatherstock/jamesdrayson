@@ -27,6 +27,17 @@ const ContactLink = styled(Link)`
   text-decoration: none;
   border-bottom: 3px solid black;
   margin-left: 12px;
+  &:visited {
+    border-bottom: 3px solid #777;
+    color: #777;
+  }
+  &:hover {
+    color: black;
+    border-bottom: none;
+  }
+  &: active {
+    border-bottom: 3px solid black;
+  }
 `;
 
 const List = styled.ul`
