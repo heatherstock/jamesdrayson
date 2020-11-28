@@ -69,22 +69,22 @@ const ListItem = styled.li`
     query {
       piercy01: file(relativePath: { eq: "everything-in-between-piercy-01.png" }) {
         childImageSharp {
-          fixed(width: 1296, height: 734) {
-            ...GatsbyImageSharpFixed
+          fluid {
+            ...GatsbyImageSharpFluid
           }
         }
       }
       piercy02: file(relativePath: { eq: "everything-in-between-piercy-02.png" }) {
         childImageSharp {
-          fixed(width: 1296, height: 734) {
-            ...GatsbyImageSharpFixed
+          fluid {
+            ...GatsbyImageSharpFluid
           }
         }
       }
       piercy03: file(relativePath: { eq: "everything-in-between-piercy-03.png" }) {
         childImageSharp {
-          fixed(width: 1296, height: 734) {
-            ...GatsbyImageSharpFixed
+          fluid {
+            ...GatsbyImageSharpFluid
           }
         }
       }
@@ -105,9 +105,9 @@ const ListItem = styled.li`
       <Wrapper>
         <Heading>Everything In Between</Heading>
         <Text>As a designer working as part of small team on a wide range of projects from branding and signage to digital design.</Text>
-             <Image fixed={data.piercy01.childImageSharp.fixed} />
-             <Image fixed={data.piercy02.childImageSharp.fixed} />
-             <Image fixed={data.piercy03.childImageSharp.fixed} />
+             <Image fluid={data.piercy01.childImageSharp.fluid} />
+             <Image fluid={data.piercy02.childImageSharp.fluid} />
+             <Image fluid={data.piercy03.childImageSharp.fluid} />
         <List>
             {data.site.siteMetadata.workLinks.map(link => (
               link.name === 'Everything In Between'

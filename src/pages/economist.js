@@ -69,15 +69,15 @@ const ListItem = styled.li`
     query {
       worldIfHomepage: file(relativePath: { eq: "the-economist-world-if-homepage-dekstop.png" }) {
         childImageSharp {
-          fixed(width: 1296, height: 734) {
-            ...GatsbyImageSharpFixed
+          fluid {
+            ...GatsbyImageSharpFluid
           }
         }
       }
       worldIfArticle: file(relativePath: { eq: "the-economist-world-if-article-dekstop.png" }) {
         childImageSharp {
-          fixed(width: 1296, height: 734) {
-            ...GatsbyImageSharpFixed
+          fluid {
+            ...GatsbyImageSharpFluid
           }
         }
       }
@@ -105,8 +105,8 @@ const ListItem = styled.li`
         <Wrapper>
           <Heading>The Economist</Heading>
           <Text>Working as part of a cross functional team designing for the master brand including ‘The World If’ (both the 2015 and 2016 editions) and ‘Technology Quarterly’ sub brands, and its sister publication The World In. Working closely with other designers, UX and developers to iterate on design concepts to ensure fully responsive solutions to briefs set by both the Creative Digital Art Director and editorial were realised. Designing social media templates, working with the New York City office to ensure The Economist’s presence on ‘Facebook Instant Articles’ was on brand, and helping to create a more immersive experience for readers of The Economist’s ‘Essays’ and it’s other long form content.</Text>
-          <Image fixed={data.worldIfHomepage.childImageSharp.fixed} />
-          <Image fixed={data.worldIfArticle.childImageSharp.fixed} />
+          <Image fluid={data.worldIfHomepage.childImageSharp.fluid} />
+          <Image fluid={data.worldIfArticle.childImageSharp.fluid} />
           <Image fixed={data.tq.childImageSharp.fixed} />
           <List>
             {data.site.siteMetadata.workLinks.map(link => (

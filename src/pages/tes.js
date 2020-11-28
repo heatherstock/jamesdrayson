@@ -69,8 +69,8 @@ const ListItem = styled.li`
     query {
       portalToPayForm: file(relativePath: { eq: "tes-portal-to-pay-form.png" }) {
       childImageSharp {
-        fixed(width: 1296, height: 734) {
-          ...GatsbyImageSharpFixed
+        fluid {
+          ...GatsbyImageSharpFluid
         }
       }
     }
@@ -91,7 +91,7 @@ const ListItem = styled.li`
       <Wrapper>
         <Heading>TES</Heading>
         <Text>Working on a number of a remote cross-functional teams across the various Tes products. In this role I have also continued to build on the previous success of the Tes Design System and continue to improve it.</Text>
-        <Image fixed={data.portalToPayForm.childImageSharp.fixed} />
+        <Image fluid={data.portalToPayForm.childImageSharp.fluid} />
         <List>
             {data.site.siteMetadata.workLinks.map(link => (
               link.name === 'TES'

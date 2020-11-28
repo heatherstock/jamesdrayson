@@ -65,54 +65,76 @@ const ListItem = styled.li`
   list-style-type: none;
 `;
 
+const CardImages = styled.div`
+@media (max-width: 899px) {
+  position: aboslute;
+}
+@media (min-width: 900px) {
+  float: left;
+}
+  width: 630px;
+  padding: 18px; 
+`
+
+const Div = styled.div`
+@media (max-width: 899px) {
+  position: relative;
+
+}
+@media (min-width: 900px) {
+  display: flex;
+  justify-content: center;
+}
+`
+
   const data = useStaticQuery(graphql`
     query {
       breakfast: file(relativePath: { eq: "james-drayson-drayson-and-stock-make-breakfast-a-success.png" }) {
         childImageSharp {
-          fixed(width: 1296, height: 734) {
-            ...GatsbyImageSharpFixed
+          fluid {
+            ...GatsbyImageSharpFluid
           }
         }
       }
       arrowCardFront: file(relativePath: { eq: "drayson-and-stock-arrow-card-front.png" }) {
         childImageSharp {
-          fixed(width: 1296, height: 734) {
-            ...GatsbyImageSharpFixed
+          fluid {
+            ...GatsbyImageSharpFluid
           }
         }
       }
       arrowCardBack: file(relativePath: { eq: "drayson-and-stock-arrow-card-back.png" }) {
         childImageSharp {
-          fixed(width: 1296, height: 734) {
-            ...GatsbyImageSharpFixed
+          fluid {
+            ...GatsbyImageSharpFluid
           }
         }
       }
       noticeCard: file(relativePath: { eq: "drayson-and-stock-notice.png" }) {
         childImageSharp {
-          fixed(width: 1296, height: 734) {
-            ...GatsbyImageSharpFixed
+          fluid {
+            ...GatsbyImageSharpFluid
           }
         }
       }
       happyBelatedCard: file(relativePath: { eq: "drayson-and-stock-happy-belated.png" }) {
         childImageSharp {
-          fixed(width: 1296, height: 734) {
-            ...GatsbyImageSharpFixed
+          fluid {
+            ...GatsbyImageSharpFluid
           }
         }
       }
       lookReadPoster01: file(relativePath: { eq: "drayson-and-stock-poster-01.png" }) {
         childImageSharp {
-          fixed(width: 1296, height: 734) {
-            ...GatsbyImageSharpFixed
+          fluid {
+            ...GatsbyImageSharpFluid
           }
         }
       }
       lookReadPoster02: file(relativePath: { eq: "drayson-and-stock-poster-02.png" }) {
         childImageSharp {
-          fixed(width: 1296, height: 734) {
-            ...GatsbyImageSharpFixed
+          fluid {
+            ...GatsbyImageSharpFluid
           }
         }
       }
@@ -133,13 +155,17 @@ const ListItem = styled.li`
         <Wrapper>
           <Heading>Drayson & Stock</Heading>
           <Text>Setting up and running a design and letterpress studio. Working on a range of projects, including the design of a full set of icons for the Financial Times to use on the new ft.com, printing letterpress invitations for Intelligent Life Magazine, and the branding of a number for small companies. Designing and printing letterpress printed products.</Text>
-          <Image fixed={data.breakfast.childImageSharp.fixed} />
-          <Image fixed={data.arrowCardFront.childImageSharp.fixed} />
-          <Image fixed={data.arrowCardBack.childImageSharp.fixed} />
-          <Image fixed={data.noticeCard.childImageSharp.fixed} />
-          <Image fixed={data.happyBelatedCard.childImageSharp.fixed} />
-          <Image fixed={data.lookReadPoster01.childImageSharp.fixed} />
-          <Image fixed={data.lookReadPoster02.childImageSharp.fixed} />
+          <Image fluid={data.breakfast.childImageSharp.fluid} />
+          <Div>
+          <CardImages><Image fluid={data.arrowCardBack.childImageSharp.fluid} /></CardImages>
+          <CardImages><Image fluid={data.arrowCardFront.childImageSharp.fluid} /></CardImages>
+          </Div>
+          <Div>
+          <CardImages><Image fluid={data.noticeCard.childImageSharp.fluid} /></CardImages>
+          <CardImages><Image fluid={data.happyBelatedCard.childImageSharp.fluid} /></CardImages>
+          </Div>
+          <Image fluid={data.lookReadPoster01.childImageSharp.fluid} />
+          <Image fluid={data.lookReadPoster02.childImageSharp.fluid} />
           <List>
             {data.site.siteMetadata.workLinks.map(link => (
               link.name === 'Drayson & Stock'
