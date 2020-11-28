@@ -30,7 +30,4 @@ export const GlobalStyle = createGlobalStyle`
     color: #black;
     font-weight: 500;
   }
-  * {
-    outline: 1px red solid !important; visibility: visible !important;
-  }
 `;
