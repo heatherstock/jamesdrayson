@@ -4,19 +4,26 @@ import PropTypes from "prop-types";
 import React from "react";
 
 const Wrapper = styled.header`
+@media (max-width: 599px) {
+  margin-bottom: 12px;
+  padding: 12px 18px 0;
+}
+@media (min-width: 600px) and (max-width: 899px) {
+  margin-bottom: 12px;
+  padding: 12px 36px 0;
+  position: sticky;
+}
 @media (min-width: 900px) {
   display: flex;
-  margin-bottom: 18px;
-  padding: 18px 72px 0;
-}
   position: sticky;
+}
   top: 0;
   z-index: 9999;
   justify-content: space-between;
   align-items: center;
   background: #eeeeee;
-  margin-bottom: 12px;
-  padding: 12px 36px 0;
+  margin-bottom: 18px;
+  padding: 18px 72px 0;
 `;
 
 const TitleLink = styled(AnchorLink)`
@@ -64,11 +71,13 @@ const NavLink = styled(AnchorLink)`
 `;
 
 const List = styled.ul`
+@media (min-width: 600px) {
+  display: flex;
+}
 @media (min-width: 900px) {
   padding-bottom: 18px;
   padding-left: 12px;
 }
-  display: flex;
   flex: 1;
   margin: 0;
   padding-bottom: 12px;

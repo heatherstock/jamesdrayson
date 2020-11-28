@@ -65,7 +65,7 @@ const FinancialTimes = () => {
       }
       settings: file(relativePath: { eq: "ft-settings.png" }) {
         childImageSharp {
-          fixed(width: 1551, height: 785) {
+          fixed(width: 1385, height: 701) {
             ...GatsbyImageSharpFixed
           }
         }

@@ -10,10 +10,13 @@ const Wrapper = styled.div`
 `;
 
 const Div = styled.div`
-@media (min-width: 900px) {
-  margin: 0 72px;
+@media (max-width: 599px) {
+  margin: 0 18px;
 }
-margin: 0 36px;
+@media (min-width: 600px) and (max-width: 899px) {
+  margin: 0 36px;
+}
+margin: 0 72px;
 `;
 
 const Layout = ({ children }) => {

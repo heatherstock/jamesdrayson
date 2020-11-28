@@ -93,6 +93,6 @@ export const MobileImages = styled.div`
 @media (min-width: 900px) {
   float: left;
 }
-  width: 318px;
-  padding: 18px; 
+  width: 284px;
+  padding-right: 36px; 
 `

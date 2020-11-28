@@ -23,7 +23,7 @@ const Economist = () => {
       }
       tq: file(relativePath: { eq: "the-economist-tq.png" }) {
         childImageSharp {
-          fixed(width: 1551, height: 785) {
+          fixed(width: 1385, height: 701) {
             ...GatsbyImageSharpFixed
           }
         }

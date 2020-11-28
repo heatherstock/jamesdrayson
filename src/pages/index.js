@@ -11,14 +11,14 @@ const IndexPage = () => {
     query {
       printersFist: file(relativePath: { eq: "james-drayson-drayson-and-stock-printer's-fist.png" }) {
         childImageSharp {
-          fixed(width: 434, height: 1238) {
+          fixed(width: 284, height: 810) {
             ...GatsbyImageSharpFixed
           }
         }
       }
       ft: file(relativePath: { eq: "james-drayson-ft-barrier.png" }) {
         childImageSharp {
-          fixed(width: 1551, height: 785) {
+          fixed(width: 1385, height: 701) {
             ...GatsbyImageSharpFixed
           }
         }

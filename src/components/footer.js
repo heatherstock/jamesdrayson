@@ -2,14 +2,17 @@ import React from "react"
 import styled from "styled-components";
 
 const Wrapper = styled.footer`
-@media (min-width: 900px) {
-  padding-left: 72px;
+@media (max-width: 599px) {
+  padding-left: 18px;
+}
+@media (min-width: 600px) and (max-width: 899px) {
+  padding-left: 36px;
 }
 position: absolute;
 width: 100%;
 height: 48px;
 padding-bottom: 36px;
-padding-left: 36px;
+padding-left: 72px;
 `;
 
 const ListItem = styled.div`
