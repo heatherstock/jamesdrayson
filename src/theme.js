@@ -4,6 +4,12 @@ import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
   body {
+    @media (max-width: 899px) {
+      font-size: 20px;
+      line-height: 32px;
+    }
+    font-size: 24px;
+    line-height: 36px;
     margin: 0px;
     font-family: Libre Baskerville, serif;
     overflow-x: hidden;
@@ -12,10 +18,15 @@ export const GlobalStyle = createGlobalStyle`
     max-width: 100%;
     color: black;
     font-weight: 400;
-    line-height: 32px;
     background: #eeeeee;
   }
-  h1, h2, h3 {
+  h1{
+    @media (max-width: 899px) {
+      font-size: 30px;
+      line-height: 42px;
+    }
+    font-size: 36px;
+    line-height: 48px;
     font-family: Work Sans, 'sans serif';
     color: #black;
     font-weight: 500;

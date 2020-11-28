@@ -25,8 +25,8 @@ const IndexPage = () => {
       }
       breakfast: file(relativePath: { eq: "james-drayson-drayson-and-stock-make-breakfast-a-success.png" }) {
         childImageSharp {
-          fixed(width: 1296, height: 810) {
-            ...GatsbyImageSharpFixed
+          fluid {
+            ...GatsbyImageSharpFluid
           }
         }
       }
@@ -52,7 +52,7 @@ const IndexPage = () => {
         <Intro fixed={data.printersFist.childImageSharp.fixed} />
         <About />
         <Work workLinks={data.site.siteMetadata.workLinks} fixed={data.ft.childImageSharp.fixed}/>
-        <Contact contactLinks={data.site.siteMetadata.contactLinks} fixed={data.breakfast.childImageSharp.fixed}/>
+        <Contact contactLinks={data.site.siteMetadata.contactLinks} fluid={data.breakfast.childImageSharp.fluid}/>
       </Layout>
     </>
   )

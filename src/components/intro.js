@@ -6,6 +6,10 @@ const Wrapper = styled.div`
 `;
 
 const Content = styled.p`
+@media (max-width: 899px) {
+  font-size: 30px;
+  line-height: 42px;
+}
   font-family: Work Sans, sans serif;
   font-weight: 500;
   font-size: 36px;

@@ -8,16 +8,12 @@ const Wrapper = styled.div`
 
 const Heading = styled.h1`
   margin-left: 12px;
-  font-size: 36px;
-  line-height: 48px;
   margin: 0;
   margin-bottom: 12px;
   color: black;
 `
 
 const Content = styled.p`
-  font-size: 24px;
-  line-height: 36px;
   margin: 0;
   padding-bottom: 18px;
   max-width: 960px;

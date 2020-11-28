@@ -8,8 +8,6 @@ const Tes = () => {
   const Heading = styled.h1`
   margin-top: 6px;
   padding-bottom: 12px;
-  font-size: 36px;
-  line-height: 48px;
   color: black;
 `;
 
@@ -19,13 +17,14 @@ const Wrapper = styled.div`
 `;
 
 const Text = styled.p`
-font-weight: 400;
-font-size: 24px;
-line-height: 36px;
 margin-top: -24px;
 `;
 
 const StyledLink = styled(Link)`
+@media (max-width: 899px) {
+  font-size: 30px;
+  line-height: 42px;
+}
   font-family: Work Sans, sans serif;
   font-weight: 500;
   font-size: 36px;
@@ -57,6 +56,10 @@ flex-wrap: wrap;
 `;
 
 const ListItem = styled.li`
+@media (max-width: 899px) {
+  font-size: 30px;
+  line-height: 42px;
+}
   padding: 0 6px;
   font-family: Work Sans, sans serif;
   font-weight: 500;

@@ -4,18 +4,25 @@ import PropTypes from "prop-types";
 import React from "react";
 
 const Wrapper = styled.header`
+@media (min-width: 900px) {
+  display: flex;
+  padding: 18px 72px 0;
+}
   position: sticky;
   top: 0;
   z-index: 9999;
-  display: flex;
   justify-content: space-between;
   align-items: center;
   background: #eeeeee;
   margin-bottom: 18px;
-  padding: 18px 72px 0;
+  padding: 18px 36px 0;
 `;
 
 const TitleLink = styled(AnchorLink)`
+@media (max-width: 899px) {
+  font-size: 30px;
+  line-height: 42px;
+}
   font-family: Work Sans, sans serif;
   font-weight: 500;
   font-size: 36px;
@@ -34,6 +41,10 @@ const TitleLink = styled(AnchorLink)`
 `;
 
 const NavLink = styled(AnchorLink)`
+@media (max-width: 899px) {
+  font-size: 30px;
+  line-height: 42px;
+}
   font-family: Work Sans, sans serif;
   font-weight: 500;
   margin-left: 12px;
@@ -53,8 +64,6 @@ const NavLink = styled(AnchorLink)`
 
 const List = styled.ul`
   display: flex;
-// could do media query to remove flex at small sizes.
-// also think about resizing font
   flex: 1;
   margin: 0;
   padding-left: 12px;
@@ -63,6 +72,10 @@ const List = styled.ul`
 `;
 
 const ListItem = styled.li`
+@media (max-width: 899px) {
+  font-size: 30px;
+  line-height: 42px;
+}
   padding: 0 6px;
   font-family: Work Sans, sans serif;
   font-weight: 500;
@@ -72,8 +85,10 @@ const ListItem = styled.li`
 `;
 
 const Div = styled.div`
-  margin: 0;
+@media (min-width: 900px) {
   border-bottom: 3px solid black;
+}
+  margin: 0;
   padding-bottom: 18px;
 `
 
@@ -82,13 +97,13 @@ const Header = ({ siteTitle, menuLinks }) => (
     <Div>
       <TitleLink to="/#home">{siteTitle}</TitleLink>
     </Div>
-      <List>
-        {menuLinks.map(link => (
-          <ListItem key={link.name}>/
-            <NavLink to={link.link}>{link.name}</NavLink>
-          </ListItem>
-        ))}
-      </List>
+    <List>
+      {menuLinks.map(link => (
+        <ListItem key={link.name}>/
+          <NavLink to={link.link}>{link.name}</NavLink>
+        </ListItem>
+      ))}
+    </List>
   </Wrapper>
 )
 

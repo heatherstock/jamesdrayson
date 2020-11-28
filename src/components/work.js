@@ -9,14 +9,16 @@ const Wrapper = styled.div`
 
 const Heading = styled.h1`
   margin-left: 12px;
-  font-size: 36px;
-  line-height: 48px;
   margin: 0;
   margin-bottom: 12px;
   color: black;
 `
 
 const StyledLink = styled(Link)`
+@media (max-width: 899px) {
+  font-size: 30px;
+  line-height: 42px;
+}
   font-family: Work Sans, sans serif;
   font-weight: 500;
   font-size: 36px;
@@ -47,6 +49,10 @@ flex-wrap: wrap;
 `;
 
 const ListItem = styled.li`
+@media (max-width: 899px) {
+  font-size: 30px;
+  line-height: 42px;
+}
   padding: 0 6px;
   font-family: Work Sans, sans serif;
   font-weight: 500;
