@@ -1,10 +1,10 @@
 import React from "react"
 import PropTypes from "prop-types"
-import styled from "styled-components";
-import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import Footer from "./footer"
 import { GlobalStyle } from "../theme";
+import styled from "styled-components";
+import { useStaticQuery, graphql } from "gatsby"
 
 const Wrapper = styled.div`
 `;

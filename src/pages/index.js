@@ -1,9 +1,9 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/layout"
-import Work from "../components/work"
 import Intro from "../components/intro"
 import About from "../components/about"
+import Work from "../components/work"
 import Contact from "../components/contact"
 
 const IndexPage = () => {
@@ -47,14 +47,12 @@ const IndexPage = () => {
   `)
 
   return (
-    <>
       <Layout>
         <Intro fixed={data.printersFist.childImageSharp.fixed} />
         <About />
         <Work workLinks={data.site.siteMetadata.workLinks} fixed={data.ft.childImageSharp.fixed}/>
         <Contact contactLinks={data.site.siteMetadata.contactLinks} fluid={data.breakfast.childImageSharp.fluid}/>
       </Layout>
-    </>
   )
 }
 
