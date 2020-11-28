@@ -11,8 +11,7 @@ const Heading = styled.h1`
 @media (min-width: 900px) {
   margin-bottom: 12px;
 }
-margin: 0;
-  margin-left: 12px;
+  margin: 0;
   color: black;
 `
 

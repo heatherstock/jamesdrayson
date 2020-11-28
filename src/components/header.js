@@ -66,12 +66,13 @@ const NavLink = styled(AnchorLink)`
 const List = styled.ul`
 @media (min-width: 900px) {
   padding-bottom: 18px;
+  padding-left: 12px;
 }
   display: flex;
   flex: 1;
   margin: 0;
-  padding-left: 12px;
   padding-bottom: 12px;
+  padding-left: 0px;
   border-bottom: 3px solid black;
 `;
 
