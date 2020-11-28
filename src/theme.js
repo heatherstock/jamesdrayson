@@ -15,7 +15,6 @@ export const GlobalStyle = createGlobalStyle`
     overflow-x: hidden;
     position: relative;
     min-height: 100vh;
-    max-width: 100%;
     color: black;
     font-weight: 400;
     background: #eeeeee;
@@ -30,5 +29,8 @@ export const GlobalStyle = createGlobalStyle`
     font-family: Work Sans, 'sans serif';
     color: #black;
     font-weight: 500;
+  }
+  * {
+    outline: 1px red solid !important; visibility: visible !important;
   }
 `;

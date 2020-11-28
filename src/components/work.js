@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components";
 import { Link } from "gatsby"
-import Image from "../components/image"
+import Img from "gatsby-image"
 
 const Wrapper = styled.div`
   margin-bottom: 60px;
@@ -14,6 +14,17 @@ const Heading = styled.h1`
   margin: 0;
   color: black;
 `
+
+const Image = styled(Img)`
+  @media (max-width: 599px) {
+    display: none !important;
+  }
+  margin-top: 36px;
+  margin-bottom: 0px;
+  overflow-x: hidden;
+  position: relative;
+  padding: 0;
+`;
 
 const StyledLink = styled(Link)`
 @media (max-width: 899px) {

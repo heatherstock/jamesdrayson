@@ -2,9 +2,21 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import * as _ from "../components/sharedStyles"
 import Layout from "../components/layout"
-import Image from "../components/image"
+import styled from "styled-components";
+import Img from "gatsby-image"
 
 const Economist = () => {
+  const Image = styled(Img)`
+@media (max-width: 599px) {
+  display: none !important;
+}
+margin-top: 36px;
+margin-bottom: 0px;
+overflow-x: hidden;
+position: relative;
+padding: 0;
+`;
+
   const data = useStaticQuery(graphql`
     query {
       worldIfHomepage: file(relativePath: { eq: "the-economist-world-if-homepage-dekstop.png" }) {

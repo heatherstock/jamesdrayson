@@ -9,10 +9,11 @@ const Wrapper = styled.footer`
   padding-left: 36px;
 }
 position: absolute;
-width: 100%;
 height: 48px;
 padding-bottom: 36px;
 padding-left: 72px;
+display: flex;
+align-items: left;
 `;
 
 const ListItem = styled.div`
@@ -27,7 +28,7 @@ const ListItem = styled.div`
   list-style-type: none;
 `;
 
-const Footer = ({ contactLinks }) => (
+const Footer = () => (
   <Wrapper>
     <ListItem>©{new Date().getFullYear()} James Drayson</ListItem>
   </Wrapper>

@@ -7,6 +7,7 @@ const StyledImage = styled(Img)`
   margin-bottom: 0px;
   overflow-x: hidden;
   position: relative;
+  padding: 0;
 `;
 
 const Image = ({ fixed, fluid }) => (
