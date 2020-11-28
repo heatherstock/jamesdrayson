@@ -66,14 +66,25 @@ const ListItem = styled.li`
 `;
 
 const MobileImages = styled.div`
+@media (max-width: 899px) {
+  position: aboslute;
+}
+@media (min-width: 900px) {
   float: left;
+}
   width: 318px;
   padding: 18px; 
 `
 
 const Div = styled.div`
-display: flex;
-justify-content: center;
+@media (max-width: 899px) {
+  position: relative;
+
+}
+@media (min-width: 900px) {
+  display: flex;
+  justify-content: center;
+}
 `
 
   const data = useStaticQuery(graphql`
@@ -101,36 +112,36 @@ justify-content: center;
       }
       barrierDesktop01: file(relativePath: { eq: "ft-barrier-desktop.png" }) {
         childImageSharp {
-          fixed(width: 1296, height: 734) {
-            ...GatsbyImageSharpFixed
+          fluid {
+            ...GatsbyImageSharpFluid
           }
         }
       }
       barrierDesktop02: file(relativePath: { eq: "ft-barrier-bottom-desktop.png" }) {
         childImageSharp {
-          fixed(width: 1296, height: 734) {
-            ...GatsbyImageSharpFixed
+          fluid {
+            ...GatsbyImageSharpFluid
           }
         }
       }
       dynamicBarrier01: file(relativePath: { eq: "ft-barrier-dynamic-world-desktop.png" }) {
         childImageSharp {
-          fixed(width: 1296, height: 734) {
-            ...GatsbyImageSharpFixed
+          fluid {
+            ...GatsbyImageSharpFluid
           }
         }
       }
       dynamicBarrier02: file(relativePath: { eq: "ft-barrier-dynamic-crypto-desktop.png" }) {
         childImageSharp {
-          fixed(width: 1296, height: 734) {
-            ...GatsbyImageSharpFixed
+          fluid {
+            ...GatsbyImageSharpFluid
           }
         }
       }
       cookieMessage: file(relativePath: { eq: "ft-cookie-message-desktop.png" }) {
         childImageSharp {
-          fixed(width: 1296, height: 734) {
-            ...GatsbyImageSharpFixed
+          fluid {
+            ...GatsbyImageSharpFluid
           }
         }
       }
@@ -163,11 +174,11 @@ justify-content: center;
             <MobileImages><Image fluid={data.barrierMobile02.childImageSharp.fluid} /></MobileImages>
             <MobileImages><Image fluid={data.barrierMobile03.childImageSharp.fluid} /></MobileImages>
           </Div>
-          <Image fixed={data.barrierDesktop01.childImageSharp.fixed} />
-          <Image fixed={data.barrierDesktop02.childImageSharp.fixed} />
-          <Image fixed={data.dynamicBarrier01.childImageSharp.fixed} />
-          <Image fixed={data.dynamicBarrier02.childImageSharp.fixed} />
-          <Image fixed={data.cookieMessage.childImageSharp.fixed} />
+          <Image fluid={data.barrierDesktop01.childImageSharp.fluid} />
+          <Image fluid={data.barrierDesktop02.childImageSharp.fluid} />
+          <Image fluid={data.dynamicBarrier01.childImageSharp.fluid} />
+          <Image fluid={data.dynamicBarrier02.childImageSharp.fluid} />
+          <Image fluid={data.cookieMessage.childImageSharp.fluid} />
           <Image fixed={data.settings.childImageSharp.fixed} />
           <List>
             {data.site.siteMetadata.workLinks.map(link => (
