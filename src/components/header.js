@@ -6,6 +6,7 @@ import React from "react";
 const Wrapper = styled.header`
 @media (min-width: 900px) {
   display: flex;
+  margin-bottom: 18px;
   padding: 18px 72px 0;
 }
   position: sticky;
@@ -14,8 +15,8 @@ const Wrapper = styled.header`
   justify-content: space-between;
   align-items: center;
   background: #eeeeee;
-  margin-bottom: 18px;
-  padding: 18px 36px 0;
+  margin-bottom: 12px;
+  padding: 12px 36px 0;
 `;
 
 const TitleLink = styled(AnchorLink)`
@@ -63,11 +64,14 @@ const NavLink = styled(AnchorLink)`
 `;
 
 const List = styled.ul`
+@media (min-width: 900px) {
+  padding-bottom: 18px;
+}
   display: flex;
   flex: 1;
   margin: 0;
   padding-left: 12px;
-  padding-bottom: 18px;
+  padding-bottom: 12px;
   border-bottom: 3px solid black;
 `;
 
@@ -87,9 +91,9 @@ const ListItem = styled.li`
 const Div = styled.div`
 @media (min-width: 900px) {
   border-bottom: 3px solid black;
+  padding-bottom: 18px;
 }
   margin: 0;
-  padding-bottom: 18px;
 `
 
 const Header = ({ siteTitle, menuLinks }) => (

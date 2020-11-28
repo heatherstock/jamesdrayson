@@ -9,9 +9,11 @@ border-bottom: 3px solid black;
 `;
 
 const Heading = styled.h1`
+@media (min-width: 900px) {
+  margin-bottom: 12px;
+}
   margin-left: 12px;
   margin: 0;
-  margin-bottom: 12px;
   color: black;
 `
 
