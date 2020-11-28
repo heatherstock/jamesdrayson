@@ -88,13 +88,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
+        name: `jamesdrayson`,
+        short_name: `jamesdrayson`,
         start_url: `/`,
-        // icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        display: `minimal-ui`,
+        icon: `src/images/james-drayson-drayson-and-stock-printer's-fist.png`
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
   pathPrefix: "/jamesdrayson",
 }
