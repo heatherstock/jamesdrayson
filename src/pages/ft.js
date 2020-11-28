@@ -65,26 +65,37 @@ const ListItem = styled.li`
   list-style-type: none;
 `;
 
+const MobileImages = styled.div`
+  float: left;
+  width: 318px;
+  padding: 18px; 
+`
+
+const Div = styled.div`
+display: flex;
+justify-content: center;
+`
+
   const data = useStaticQuery(graphql`
     query {
       barrierMobile01: file(relativePath: { eq: "ft-barrier-mobile-01.png" }) {
         childImageSharp {
-          fixed(width: 318, height: 682) {
-            ...GatsbyImageSharpFixed
+          fluid {
+            ...GatsbyImageSharpFluid
           }
         }
       }
       barrierMobile02: file(relativePath: { eq: "ft-barrier-mobile-02.png" }) {
         childImageSharp {
-          fixed(width: 318, height: 682) {
-            ...GatsbyImageSharpFixed
+          fluid {
+            ...GatsbyImageSharpFluid
           }
         }
       }
       barrierMobile03: file(relativePath: { eq: "ft-barrier-mobile-03.png" }) {
         childImageSharp {
-          fixed(width: 318, height: 682) {
-            ...GatsbyImageSharpFixed
+          fluid {
+            ...GatsbyImageSharpFluid
           }
         }
       }
@@ -147,9 +158,11 @@ const ListItem = styled.li`
         <Wrapper>
           <Heading>Financial Times</Heading>
           <Text>Working across several streams within Product & Technology, including Acquisition and GPDR. Working closely with developers, product owners, the legal team and stakeholders to successfully meet a number of briefs. For GDPR I worked on a number of initiatives to help the FT become compliant while ensuring any new controls and pages required were concise and fully accessible. Throughout my time at the FT I worked very closely with the Origami team to define and maintain a component library for use by both internal and external products, including FT.com and the Apps. Most recently, I was defining a new design system and exploring how we encourage more designers and developers to use the libraries, while also considering core experience and championing accessibility.</Text>
-          <Image fixed={data.barrierMobile01.childImageSharp.fixed} style={{paddingRight: 18}} />
-          <Image fixed={data.barrierMobile02.childImageSharp.fixed} />
-          <Image fixed={data.barrierMobile03.childImageSharp.fixed} />
+          <Div>
+            <MobileImages><Image fluid={data.barrierMobile01.childImageSharp.fluid} /></MobileImages>
+            <MobileImages><Image fluid={data.barrierMobile02.childImageSharp.fluid} /></MobileImages>
+            <MobileImages><Image fluid={data.barrierMobile03.childImageSharp.fluid} /></MobileImages>
+          </Div>
           <Image fixed={data.barrierDesktop01.childImageSharp.fixed} />
           <Image fixed={data.barrierDesktop02.childImageSharp.fixed} />
           <Image fixed={data.dynamicBarrier01.childImageSharp.fixed} />

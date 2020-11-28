@@ -9,7 +9,7 @@ const StyledImage = styled(Img)`
   position: relative;
 `;
 
-const Image = ({ fixed }) => (
-  <StyledImage fixed={fixed} fadeIn={false}/>
+const Image = ({ fixed, fluid }) => (
+  <StyledImage fixed={fixed} fluid={fluid} fadeIn={false}/>
 )
 export default Image
