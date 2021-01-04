@@ -86,18 +86,7 @@ const FinancialTimes = () => {
       <Layout>
         <_.Wrapper>
           <_.Heading>Financial Times</_.Heading>
-          <_.Text>Working across several streams within Product & Technology, 
-            including Acquisition and GPDR. Working closely with developers, 
-            product owners, the legal team and stakeholders to successfully 
-            meet a number of briefs. For GDPR I worked on a number of initiatives 
-            to help the FT become compliant while ensuring any new controls and 
-            pages required were concise and fully accessible. Throughout my time 
-            at the FT I worked very closely with the <_.TextLink to={'https://origami.ft.com'} target='_blank'>Origami</_.TextLink> team 
-            to define and maintain a component library for use by both internal 
-            and external products, including FT.com and the Apps. Most recently, 
-            I was defining a new design system and exploring how we encourage more 
-            designers and developers to use the libraries, while also considering 
-            core experience and championing accessibility.</_.Text>
+          <_.Text>Worked across several workstreams within Product and Technology. Worked closely with developers, product owners, the legal team and stakeholders to successfully meet a number of briefs. For GDPR I worked on a number of initiatives to help the FT become compliant while ensuring any new controls and pages required were concise and fully accessible.   Throughout my time at the FT I worked very closely with the <_.TextLink to={'https://origami.ft.com'} target='_blank'>Origami</_.TextLink> team to define and maintain a component library for use by both internal and external products, including FT.com. Finally to encourage I defined a new design system and explored how we would encourage more designers and developers to use the shared libraries, while also considering the core experience and championing accessibility.</_.Text>
           <_.Div>
             <_.MobileImages><Image fluid={data.barrierMobile01.childImageSharp.fluid} /></_.MobileImages>
             <_.MobileImages><Image fluid={data.barrierMobile02.childImageSharp.fluid} /></_.MobileImages>

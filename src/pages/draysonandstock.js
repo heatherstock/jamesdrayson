@@ -72,7 +72,7 @@ const DraysonAndStock = () => {
       <Layout>
         <_.Wrapper>
           <_.Heading>Drayson & Stock</_.Heading>
-          <_.Text>Setting up and running <_.TextLink to={'https://www.draysonandstock.com/'} target='_blank'>Drayson & Stock</_.TextLink>, a design and letterpress studio. Working on a range of projects, including the design of a full set of icons for the Financial Times to use on the new ft.com, printing letterpress invitations for Intelligent Life Magazine, and the branding of a number for small companies. Designing and printing letterpress printed products.</_.Text>
+          <_.Text>Setting up and running <_.TextLink to={'https://www.draysonandstock.com/'} target='_blank'>Drayson & Stock</_.TextLink>, a design and letterpress studio. Working on a range of projects, including the design of a full set of icons for the Financial Times to use on the new ft.com, printing letterpress invitations for Intelligent Life Magazine, and the branding for a number of small companies. Designing and printing letterpress printed products.</_.Text>
           <Image fluid={data.breakfast.childImageSharp.fluid} />
           <_.Div>
           <_.CardImages><Image fluid={data.arrowCardBack.childImageSharp.fluid} /></_.CardImages>

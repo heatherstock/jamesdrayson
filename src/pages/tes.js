@@ -37,7 +37,7 @@ const Tes = () => {
       <Layout>
       <_.Wrapper>
         <_.Heading>TES</_.Heading>
-        <_.Text>Working on a number of a remote cross-functional teams across the various Tes products. In this role I have also continued to build on the previous success of the Tes Design System and continue to improve it.</_.Text>
+        <_.Text>Working on a number of Tes products, both internal and customer facing, in remote cross-functional teams. Making use of user insights, user testing and data to inform a wide range of work from low fidelty wireframes and user flows to high fidelty prototypes.    In this role I have also continued to build on and improve the previous success of the Tes Design System, by making it fully accessible and, where possible, simplifying it. Most recently I have been leading a project to create a new design system, ‘Pencil Case’, built from the bottom up with accessibility, responsiveness and core experience at its heart. </_.Text>
         <Image fluid={data.portalToPayHomepage.childImageSharp.fluid} />
         <Image fluid={data.portalToPayForm.childImageSharp.fluid} />
         <_.List>
