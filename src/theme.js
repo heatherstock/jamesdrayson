@@ -11,7 +11,7 @@ export const GlobalStyle = createGlobalStyle`
     font-size: 24px;
     line-height: 36px;
     margin: 0px;
-    font-family: Libre Baskerville, serif;
+    font-family: Work Sans, 'sans serif';
     overflow-x: hidden;
     position: relative;
     min-height: 100vh;
@@ -26,7 +26,6 @@ export const GlobalStyle = createGlobalStyle`
     }
     font-size: 36px;
     line-height: 48px;
-    font-family: Work Sans, 'sans serif';
     color: #black;
     font-weight: 500;
   }

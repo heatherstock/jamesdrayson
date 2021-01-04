@@ -43,12 +43,34 @@ export const StyledLink = styled(Link)`
   }
 `;
 
+export const TextLink = styled(Link)`
+@media (max-width: 899px) {
+  font-size: 30px;
+  line-height: 42px;
+}
+  padding-bottom: 1px;
+  color: black;
+  text-decoration: none;
+  border-bottom: 2px solid black;
+  &:visited {
+    border-bottom: 3px solid #777;
+    color: #777;
+  }
+  &:hover {
+    color: black;
+    border-bottom: none;
+  }
+  &: active {
+    border-bottom: 3px solid black;
+  }
+`;
+
 export const List = styled.ul`
 display: flex;  
 flex-wrap: wrap;
   margin: 0;
   padding-left: 0px;
-  padding-top: 36px;
+  padding-top: 72px;
 `;
 
 export const ListItem = styled.li`

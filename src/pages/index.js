@@ -49,8 +49,8 @@ const IndexPage = () => {
   return (
       <Layout>
         <Intro fixed={data.printersFist.childImageSharp.fixed} />
-        <About />
         <Work workLinks={data.site.siteMetadata.workLinks} fixed={data.ft.childImageSharp.fixed}/>
+        <About />
         <Contact contactLinks={data.site.siteMetadata.contactLinks} fluid={data.breakfast.childImageSharp.fluid}/>
       </Layout>
   )
