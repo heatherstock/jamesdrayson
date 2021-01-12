@@ -19,8 +19,7 @@ const Content = styled.p`
 
 const Intro = ({ fixed }) => (
   <Wrapper>
-    <Content>Product Designer, Typographer</Content>
-    <Content>& Letterpress Printer</Content>
+    <Content>Product Design & Typography</Content>
     <Image fixed={fixed} />
   </Wrapper>
 )

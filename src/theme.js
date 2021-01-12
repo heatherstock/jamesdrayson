@@ -8,7 +8,7 @@ export const GlobalStyle = createGlobalStyle`
       font-size: 20px;
       line-height: 32px;
     }
-    font-size: 24px;
+    font-size: 26px;
     line-height: 36px;
     margin: 0px;
     font-family: Work Sans, 'sans serif';

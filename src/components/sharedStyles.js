@@ -44,10 +44,6 @@ export const StyledLink = styled(Link)`
 `;
 
 export const TextLink = styled(Link)`
-@media (max-width: 899px) {
-  font-size: 30px;
-  line-height: 42px;
-}
   padding-bottom: 1px;
   color: black;
   text-decoration: none;
